@@ -22,4 +22,4 @@ EXPOSE 8080 8443 9990 9999
 USER jboss
 RUN $JBOSS_HOME/bin/add-user.sh admin jboss-123 --silent
 
-cmd ["/ushr/share/wildfly/bin/standalone.sh", "-Djboss.bind.address=0.0.0.0", "-Djboss.bind.address.management=0.0.0.0"]
+cmd ["/usr/share/wildfly/bin/standalone.sh", "-Djboss.bind.address=0.0.0.0", "-Djboss.bind.address.management=0.0.0.0"]
